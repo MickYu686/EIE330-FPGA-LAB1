@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at tb_linedecoder.v(31): always construct contains both blocking and non-blocking assignments File: D:/colleage/fpga/linedecoder/Sim/tb_linedecoder.v Line: 31

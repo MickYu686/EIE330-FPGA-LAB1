@@ -1,0 +1,27 @@
+module tb_fulladder(
+	input	   ina, inb, cin,
+	output	out_true,cout_true,
+	output   out_test, cout_test
+);
+
+fulladder fulladder_true
+(
+	.ina (ina),
+	.inb (inb),
+	.cin (cin),
+
+	.out(out_true),
+	.cout(cout_true)
+);
+
+stu_fulladder tb_fulladder
+(
+	.ina (ina),
+	.inb (inb),
+	.cin (cin),
+
+	.out(out_test),
+	.cout(cout_test)
+);
+
+endmodule

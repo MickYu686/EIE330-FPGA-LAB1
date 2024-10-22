@@ -1,0 +1,18 @@
+module tb_linedecoder(
+	input		[1:0]	ina,
+	output	wire	[3:0]	inb_true,
+	output	wire	[3:0]	inb_test
+);
+
+linedecoder linedecoder_true(
+	.ina(ina),
+	.inb(inb_true)
+);
+
+linedecoder tb_linedecoder(
+	.ina(ina),
+	.inb(inb_test)
+);
+
+
+endmodule
